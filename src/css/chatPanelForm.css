@@ -1,0 +1,121 @@
+.chat-panel__form {
+    width: 90%;
+    height: 80%;
+    position: fixed;
+    background-color: var(--gray-1);
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 10px;
+    animation: fadeIn 1s;
+    box-shadow: 0px 0px 10px 0px var(--gray-1);
+}
+
+.chat-panel__form--disabled {
+    z-index: -1;
+    display: none;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.chat-panel__form__title {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: 1px solid var(--gray-2);
+}
+
+.chat-panel__form__history {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+
+.chat-panel__form__input {
+    display: flex;
+    font-size: 15px;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px;
+    border-top: 1px solid var(--gray-2);
+}
+
+.chat-panel__form__input__button {
+    background-color: var(--yellow);
+    border: 0px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.chat-panel__form__history {
+    flex: 1;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.chat-panel__form__history__local-msg {
+    display: flex;
+    width: 200px;
+    background-color: var(--black);
+    border-radius: 10px;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: 10px;
+    padding: 10px;
+    overflow-wrap: break-word;
+    box-shadow: 0px 0px 10px 0px var(--black);
+}
+
+.chat-panel__form__history__local-msg__time {
+    font-size: 12px;
+}
+
+.chat-panel__form__history__remote-msg {
+    display: flex;
+    width: 200px;
+    background-color: var(--black);
+    border-radius: 10px;
+    flex-direction: column;
+    margin-right: auto;
+    margin-right: 10px;
+    padding: 10px;
+    overflow-wrap: break-word;
+    box-shadow: 0px 0px 10px 0px var(--black);
+}
+
+.chat-panel__form__history__remote-msg__time {
+    font-size: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+    .chat-panel__form {
+        width: 500px;
+        animation: fadeIn 1s;
+    }
+
+    .chat-panel__form__history__local-msg {
+        width: 300px;
+    }
+
+    .chat-panel__form__history__remote-msg {
+        width: 300px;
+    }
+}

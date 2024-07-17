@@ -1,0 +1,15 @@
+.chat-panel__checks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 50%;
+}
+
+.chat-panel__checks__icon {
+  flex: 10%;
+}
+
+.chat-panel__checks__label {
+  flex: 90%;
+}

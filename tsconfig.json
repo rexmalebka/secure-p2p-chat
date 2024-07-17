@@ -1,0 +1,37 @@
+{
+	"compilerOptions": {
+		"jsx": "react-jsx",
+		"allowJs": true,
+		"target": "ES6",
+		"lib": [
+			"esnext",
+			"dom"
+		],
+		"module": "ESNext",
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"noImplicitAny": true,
+		"sourceMap": true,
+		"baseUrl": ".",
+		"outDir": "dist",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"paths": {
+			"*": [
+				"node_modules/*"
+			],
+			"@assets/*": [
+				"./assets/*"
+			],
+			"@src/*": [
+				"./src/*"
+			]
+		}
+	},
+	"include": [
+		"src/*",
+		"src/**/*",
+		"src/Context/*",
+		"tools/**/*"
+, "tests/main.tsx"	]
+}

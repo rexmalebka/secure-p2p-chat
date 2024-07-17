@@ -1,0 +1,29 @@
+.chat-panel__handshake {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    width: 40%;
+    justify-content: center;
+}
+
+.chat-panel__handshake__clipboard {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.chat-panel__handshake__clipboard__icon {
+    width: 40px;
+}
+
+.chat-panel__handshake__clipboard__input {
+    max-width: 80%;
+    cursor: pointer;
+    background-color: var(--gray-1);
+    color: var(--navy);
+    overflow: auto;
+}
+
+.chat-panel__handshake__qrcode {
+    max-width: 200px;
+}
