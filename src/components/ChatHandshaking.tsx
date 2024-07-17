@@ -34,7 +34,7 @@ const ChatHandshaking: React.FC<{
                 <div className="chat-panel__handshake">
                     <div className="chat-panel__handshake__clipboard" onClick={copyURL}>
                         <FaClipboard className="chat-panel__handshake__clipboard__icon" />
-                        <label>copy this url</label>
+                        <a href={chatURL}>copy this url</a>
                     </div>
 
                     <label htmlFor="">or scan this QR</label>
